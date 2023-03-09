@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_1">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/yellow_1"
+        app:hintTextColor="@color/yellow_1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount of Money"
+            android:textColor="@color/yellow_1"
+            android:inputType="number"
+            android:id="@+id/moneyD"
+            android:textCursorDrawable="@color/yellow_1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/yellow_1"
+        app:hintTextColor="@color/yellow_1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_1"
+            android:hint="Note"
+            android:id="@+id/noteD"
+            android:textCursorDrawable="@color/yellow_1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textSize="20sp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/yellow_1"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/radio"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:textColor="@color/yellow_1"
+                android:id="@+id/incomeD"
+                android:layout_weight="1"
+                android:buttonTint="@color/yellow_1"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expenses"
+                android:textColor="@color/yellow_1"
+                android:id="@+id/expensesD"
+                android:layout_weight="1"
+                android:buttonTint="@color/yellow_1"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow_1"
+        android:popupBackground="@color/yellow_1"
+        android:layout_margin="10dp"
+        android:id="@+id/categoryD"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:id="@+id/create"
+        android:layout_marginTop="20dp"
+        android:background="@color/yellow_1"
+        android:textColor="@color/black"
+        android:padding="5dp" />
+
+</LinearLayout>

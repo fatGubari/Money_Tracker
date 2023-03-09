@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blue_1">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/yellow_1"
+        app:hintTextColor="@color/yellow_1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_1"
+            android:hint="New Category"
+            android:id="@+id/NewCat"
+            android:textCursorDrawable="@color/yellow_1"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/yellow_1"
+            android:popupBackground="@color/yellow_1"
+            android:layout_margin="10dp"
+            android:id="@+id/NewCatSp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create"
+            android:id="@+id/createCat"
+            android:layout_marginTop="20dp"
+            android:background="@color/yellow_1"
+            android:textColor="@color/black"
+            android:padding="5dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

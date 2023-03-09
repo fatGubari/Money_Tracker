@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blue_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            android:layout_margin="20dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/recovery"
+            app:lottie_url="REPLACE_JSON_URL" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Make Password"
+        android:textStyle="bold"
+        android:textColor="@color/yellow_1"
+        android:textSize="40sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/yellow_1"
+        app:hintTextColor="@color/yellow_1"
+        android:layout_margin="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/yellow_1"
+            android:id="@+id/su_email"
+            android:cursorVisible="false"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/transparent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="true"
+        app:boxStrokeColor="@color/yellow_1"
+        app:hintTextColor="@color/yellow_1"
+        android:layout_margin="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/yellow_1"
+            android:id="@+id/su_password"
+            android:cursorVisible="false"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="true"
+        app:boxStrokeColor="@color/yellow_1"
+        app:hintTextColor="@color/yellow_1"
+        android:layout_margin="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-Password"
+            android:textColor="@color/yellow_1"
+            android:id="@+id/su_repassword"
+            android:cursorVisible="false"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:id="@+id/create"
+        android:layout_marginTop="10dp"
+        android:background="@color/yellow_1"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:elevation="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraFragment"
+    android:background="@color/blue_1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="Click The Button To Take A Picture"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Open Camera"
+            android:layout_gravity="center"
+            android:id="@+id/camera"
+            android:background="@color/yellow_2"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:id="@+id/camera_image"
+            android:layout_gravity="center"
+            android:background="@color/yellow_2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/yellow_1"
+            android:layout_margin="8dp"
+            android:id="@+id/imgName"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Save Image"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:id="@+id/save"
+            android:background="@color/yellow_1"
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

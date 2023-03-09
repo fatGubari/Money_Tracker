@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue_2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            android:layout_margin="40dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/profile"
+            app:lottie_url="REPLACE_JSON_URL" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Enter Password"
+        android:textStyle="bold"
+        android:textColor="@color/yellow_1"
+        android:textSize="40sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="true"
+        android:id="@+id/si_password_til"
+        app:boxStrokeColor="@color/yellow_1"
+        app:hintTextColor="@color/yellow_1"
+        android:layout_margin="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/yellow_1"
+            android:id="@+id/si_password"
+            android:cursorVisible="false"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_marginTop="10dp"
+        android:background="@color/yellow_1"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:elevation="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget_password"
+        android:textColor="@color/yellow_1"
+        android:text="Forget Password?"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up"
+        android:textColor="@color/yellow_1"
+        android:text="Make A Password"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15dp"/>
+</LinearLayout>
+
+
+
+
